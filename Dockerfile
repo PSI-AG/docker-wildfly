@@ -9,7 +9,7 @@ WORKDIR /opt/jboss
 # Expose the ports we're interested in
 EXPOSE 8080 9990 8787
 
-ENV JBOSS_HOME=/opt/jboss/wildfly WILDFLY_VERSION=10.0.0.CR2
+ENV JBOSS_HOME=/opt/jboss/wildfly WILDFLY_VERSION=10.0.0.CR5
 
 RUN curl http://download.jboss.org/wildfly/$WILDFLY_VERSION/wildfly-$WILDFLY_VERSION.tar.gz | tar zx && \
     mv wildfly-$WILDFLY_VERSION wildfly
