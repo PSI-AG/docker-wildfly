@@ -1,4 +1,4 @@
-FROM psiag/oracle-java:8u72
+FROM psiag/oracle-java:8u102
 
 RUN groupadd -r jboss -g 1000 && useradd -u 1000 -r -g jboss -m -d /opt/jboss -s /sbin/nologin -c "JBoss user" jboss
 
